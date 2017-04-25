@@ -6,6 +6,8 @@
  * Date: 24.04.2017
  * Time: 11:49
  */
+namespace App\Core;
+
 class App
 {
     protected static $registry = [];

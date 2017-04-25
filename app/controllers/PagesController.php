@@ -6,6 +6,8 @@
  * Date: 23.04.2017
  * Time: 22:53
  */
+namespace App\Controllers;
+
 class PagesController
 {
     public function home()

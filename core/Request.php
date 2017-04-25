@@ -6,6 +6,7 @@
  * Date: 23.04.2017
  * Time: 23:10
  */
+namespace App\Core;
 class Request
 {
     public static function uri()

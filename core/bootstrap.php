@@ -5,6 +5,8 @@
  * Date: 20.04.2017
  * Time: 9:33
  */
+use App\Core\App;
+use App\Core\Database\{Database,QueryBuilder};
 
 require '../vendor/autoload.php';
 

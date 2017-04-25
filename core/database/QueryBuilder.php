@@ -6,7 +6,7 @@
  * Date: 23.02.2017
  * Time: 19:38
  */
-
+namespace App\Core\Database;
 
 /**
  * Class QueryBuilder
