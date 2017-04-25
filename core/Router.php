@@ -7,7 +7,7 @@
  */
 namespace App\Core;
 
-
+use App\Core\CSRF;
 
 class Router
 {
@@ -20,12 +20,17 @@ class Router
     {
         if(array_key_exists($uri,$this->routes[$requestType]))
         {
+            if(!CSRF::check())
+            {
+                throw new \Exception("Try few more times and you'll be banned :).");
+            }
+
             return $this->callAction(
                 ...explode('@',$this->routes[$requestType][$uri])
             );
         }
 
-        throw new Exception('No route defined for URI : ' . $uri);
+        throw new \Exception('No route defined for URI : ' . $uri);
     }
 
     public static function load($file)
@@ -55,7 +60,7 @@ class Router
 
         if(!method_exists($controller,$action))
         {
-            throw new Exception('No action : ' . $action . ' for controller : ' . $controller);
+            throw new \Exception('No action : ' . $action . ' for controller : ' . $controller);
         }
 
         return $controller->$action();

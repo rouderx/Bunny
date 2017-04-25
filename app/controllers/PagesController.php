@@ -8,7 +8,6 @@
  */
 namespace App\Controllers;
 
-use App\Core\CSRF;
 
 class PagesController
 {
