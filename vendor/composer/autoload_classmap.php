@@ -8,11 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
+    'App\\Core\\CSRF' => $baseDir . '/core/CSRF.php',
     'App\\Core\\Database\\Database' => $baseDir . '/core/database/Database.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
-    'CSRF' => $baseDir . '/core/CSRF.php',
     'ComposerAutoloaderInitf0b527db852063418b6eae96038ca0e4' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInitf0b527db852063418b6eae96038ca0e4' => $vendorDir . '/composer/autoload_static.php',
